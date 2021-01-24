@@ -39,13 +39,17 @@ end
 
 group :test do
   gem 'database_cleaner'
-  gem 'factory_bot_rails', '~> 6.1'
+  gem 'fabrication', '~> 2.21', '>= 2.21.1'
   gem 'faker', '~> 2.15', '>= 2.15.1'
   gem 'rails-controller-testing'
   gem 'rspec-activemodel-mocks'
   gem 'shoulda', '~> 4.0'
   gem 'shoulda-matchers', '~> 4.5', '>= 4.5.1'
 end
+
+#Authentication
+gem 'devise', '~> 4.7', '>= 4.7.3'
+gem 'devise-jwt', '~> 0.7.0'
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
