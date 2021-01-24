@@ -38,5 +38,15 @@ module PhoneShop
     config.api_only = true
 
     config.action_controller.default_protect_from_forgery = true
+
+    config.middleware.insert_before 0, Rack::Cors do
+      allow do
+        origins '*'
+        resource '*',
+          :headers => :any,
+          :expose  => ['access-token', 'expiry', 'token-type', 'uid', 'client'],
+          :methods => [:get, :post, :delete, :put, :patch, :options, :head]
+      end
+    end
   end
 end
