@@ -54,5 +54,9 @@ gem 'devise-jwt', '~> 0.7.0'
 # serializers
 gem 'active_model_serializers', '~> 0.10.12'
 
+# Role based Authorization
+gem 'pundit', '~> 2.1'
+gem 'rolify', '~> 5.3'
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]

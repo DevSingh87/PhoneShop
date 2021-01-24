@@ -2,12 +2,14 @@ class Api::V1::MobilePhonesController < Api::V1::ApiController
   before_action :authenticate_user!
 
   def index
-    @mobile_phones = MobilePhone.all
+    @mobile_phones =  MobilePhone.all
+    authorize @mobile_phones
     render json: @mobile_phones
   end
 
   def create
     @mobile_phone = MobilePhone.new(mobile_phone_params)
+    authorize @mobile_phone
 
     if @mobile_phone.save
       render json: @mobile_phone

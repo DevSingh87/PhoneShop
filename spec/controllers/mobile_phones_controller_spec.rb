@@ -3,6 +3,8 @@ require 'rails_helper'
 RSpec.describe Api::V1::MobilePhonesController, type: :controller do
   before(:each) do
     allow(controller).to receive(:authenticate_user!).and_return(true)
+    store_manager = Fabricate(:store_manager)
+    controller.stub(:current_user).and_return store_manager
     @mobile_phone = Fabricate(:mobile_phone)
   end
 
