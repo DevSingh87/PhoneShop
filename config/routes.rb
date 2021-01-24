@@ -6,16 +6,13 @@ Rails.application.routes.draw do
         :format => :json
       },
       :controllers => {
-        :sessions => 'api/v1/sessions',
-        :passwords => 'api/v1/passwords',
-        :confirmations => 'api/v1/confirmations',
-        :unlocks => 'api/v1/unlocks'
+        :sessions => 'api/v1/sessions'
       }
   end
 
   namespace :api do
     namespace :v1 do
-      #resource to come
+      resources :mobile_phones, only: %i[index create]
     end
   end
 
