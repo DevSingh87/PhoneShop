@@ -54,6 +54,9 @@ gem 'devise-jwt', '~> 0.7.0'
 # serializers
 gem 'active_model_serializers', '~> 0.10.12'
 
+# Pagination
+gem 'will_paginate'
+
 # Role based Authorization
 gem 'pundit', '~> 2.1'
 gem 'rolify', '~> 5.3'
