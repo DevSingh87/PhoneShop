@@ -22,7 +22,9 @@ I have used the following gems for different purposes:
 # How to run project locally
 **Backend**
 - clone repo and rename it.
-- `cd renamed_folder_name'.
+
+- `cd renamed_folder_name`.
+- `git checkout challenge`
 - Do `bundle install`
 - `rake db:create`
 - `rake db:migrate`
