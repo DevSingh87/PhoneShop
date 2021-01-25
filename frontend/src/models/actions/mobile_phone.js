@@ -1,11 +1,17 @@
 import axios from "axios";
 import { message } from "antd";
 
+const auth_token = localStorage.getItem('auth_token');
+
 // eslint-disable-next-line no-unused-vars
 const list = (page) => {
   let url = `/api/v1/mobile_phones?page=${page}`;
   return axios
-    .get(url)
+    .get(url, {
+      headers: {
+        "Authorization": `${auth_token}`
+      }
+    })
     .then(response => {
       return response;
     })
@@ -16,7 +22,11 @@ const list = (page) => {
 
 const create = params =>
     axios
-      .post(`/api/v1/mobile_phones`, params)
+      .post(`/api/v1/mobile_phones`, params, {
+        headers: {
+          "Authorization": `${auth_token}`
+        }
+      })
       .then(response => {
       return response;
       })

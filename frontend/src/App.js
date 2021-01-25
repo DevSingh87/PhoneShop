@@ -1,12 +1,10 @@
 import React from 'react';
-import Routes from './components/route/router';
-import "../src/styles/theme.less"; // variables to override antd
-import "../src/styles/index.scss";
+import SessionManager from './components/authentication/session_manager';
 
 function App() {
   return (
     <div className="App">
-      <Routes />
+      <SessionManager />
     </div>
   );
 }

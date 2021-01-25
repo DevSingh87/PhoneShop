@@ -45,7 +45,7 @@ class MobilePhoneCreate extends BaseComponent {
       <div className="page__wrapper">
         <Card title="Mobile Phone - New Inventory">
             <div className="form-wrapper">
-                <Form onSubmit={this.handleSubmit}>
+                <Form onSubmit={this.handleSubmit} class="mobile-phone">
                     <Row>
                         <Col xs={24}>
                             <FormItem
@@ -62,7 +62,7 @@ class MobilePhoneCreate extends BaseComponent {
                             label= "Model"
                             name="model" form={this.props.form}
                             rules={[{ required: true, message: 'Please enter model name' }]}>
-                                <Input type="text"  placeholder="Enter Model Name" />
+                                <Input type="text"  placeholder="Enter Model Name" style={{ width: 500 }}/>
                             </FormItem>
                         </Col>
 
@@ -72,7 +72,7 @@ class MobilePhoneCreate extends BaseComponent {
                             className="margin_l_r"
                             name="model_number" form={this.props.form}
                             rules={[{ required: true, message: 'Please model number' }]}>
-                                <Input type="text"  placeholder="Enter Model Number" />
+                                <Input type="text"  placeholder="Enter Model Number" style={{ width: 500 }}/>
                             </FormItem>
                         </Col>
 
@@ -81,7 +81,7 @@ class MobilePhoneCreate extends BaseComponent {
                             label= "Storage Capacity"
                             name="storage_capacity" form={this.props.form}
                             rules={[{ required: true, message: 'Please enter storage capacity' }]}>
-                                <Input type="text"  placeholder="Enter Storage Size" />
+                                <Input type="text"  placeholder="Enter Storage Size" style={{ width: 500 }}/>
                             </FormItem>
                         </Col>
 
@@ -90,7 +90,7 @@ class MobilePhoneCreate extends BaseComponent {
                             label= "Year of Manufacture"
                             name="manufacturing_year" form={this.props.form}
                             rules={[{ required: true, message: 'Please enter the year of manufacture' }]}>
-                                <Input type="text"  placeholder="Enter Year of Manufacture" />
+                                <Input type="text"  placeholder="Enter Year of Manufacture" style={{ width: 500 }}/>
                             </FormItem>
                         </Col>
 
@@ -100,7 +100,7 @@ class MobilePhoneCreate extends BaseComponent {
                             className="margin_l_r"
                             name="color" form={this.props.form}
                             rules={[{ required: true, message: 'Please enter color' }]}>
-                                <Input type="text"  placeholder="Enter Color" />
+                                <Input type="text"  placeholder="Enter Color" style={{ width: 500 }}/>
                             </FormItem>
                         </Col>
 
@@ -109,7 +109,7 @@ class MobilePhoneCreate extends BaseComponent {
                             label= "Price"
                             name="price" form={this.props.form}
                             rules={[{ required: true, message: 'Please selling price' }]}>
-                                <Input type="text"  placeholder="Enter Selling Price" />
+                                <Input type="text"  placeholder="Enter Selling Price" style={{ width: 500 }}/>
                             </FormItem>
                         </Col>
                     </Row>

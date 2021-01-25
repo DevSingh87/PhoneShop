@@ -1,5 +1,5 @@
 class Api::V1::MobilePhonesController < Api::V1::ApiController
-  #before_action :authenticate_user!
+  before_action :authenticate_user!
 
   def index
     mobile_phones = MobilePhone.paginate(page: params[:page], per_page: 3)

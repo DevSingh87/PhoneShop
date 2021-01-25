@@ -16,10 +16,11 @@ class Routes extends BaseComponent {
       <div>
         <Router history={history}>
           <div className="button_top">
-            <Col xs={20}>
+            <Col xs={20} style={{textAlign: 'right'}}>
+              <Link to="/mobile_phones/new"><Button  type="primary">Mobile Phone - New Inventory</Button></Link>
             </Col>
             <Col xs={4} style={{textAlign: 'left'}} >
-              <Link to="/mobile_phones/new"><Button  type="primary">Mobile Phone - New Inventory</Button></Link>
+              <Button  type="primary" onClick={this.handleLogOut}> Log Out </Button>
             </Col>
           </div>
           <Switch>
