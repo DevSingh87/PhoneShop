@@ -13,8 +13,8 @@ RSpec.describe Api::V1::MobilePhonesController, type: :controller do
       get :index
       expect(response).to have_http_status(:success)
       hash_body = JSON.parse(response.body)
-      expect(hash_body.length).to eq(1)
-      expect(hash_body[0]["manufacturer"]).to eq(@mobile_phone.manufacturer)
+      expect(hash_body["mobile_phones"].count).to eq(1)
+      expect(hash_body["mobile_phones"][0]["manufacturer"]).to eq(@mobile_phone.manufacturer)
     end
   end
 
