@@ -9,14 +9,21 @@ I have used the following gems for different purposes:
 
 # How application looks at fronend side
 - Login Page
+
+ http://localhost:3000/
+ 
 <img width="311" alt="Screenshot 2021-01-20 at 3 51 27 AM" src="https://user-images.githubusercontent.com/3329134/105737394-e430d400-5f5b-11eb-93e7-a7da68dc44c5.png">
 
 - Mobile Phone Inventory List Page
 
+ http://localhost:3000/mobile_phones
+ 
 <img width="311" alt="Screenshot 2021-01-20 at 3 51 27 AM" src="https://user-images.githubusercontent.com/3329134/105738134-b9934b00-5f5c-11eb-8be6-23b7ecd06600.png">
 
 - Mobile Phone Inventory Creation Page
 
+ http://localhost:3000/mobile_phones/new
+ 
 <img width="311" alt="Screenshot 2021-01-20 at 3 51 27 AM" src="https://user-images.githubusercontent.com/3329134/105738592-31fa0c00-5f5d-11eb-8ffc-2e80265d1ccb.png">
 
 # How to run project locally
