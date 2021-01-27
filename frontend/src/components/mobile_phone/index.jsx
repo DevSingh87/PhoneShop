@@ -55,7 +55,7 @@ class MobilePhoneList extends BaseComponent {
                   <Card title={mobile_phone.manufacture} key={mobile_phone.id} bordered={true}>
                   <p className="mob_phone_manufacturer">{mobile_phone.manufacturer} </p>
                   <p className="model_info"><strong>Model : </strong>{mobile_phone.model}    <strong> Model Name : </strong> {mobile_phone.model_number}</p>
-                  <p className="specifications"><strong> Storage Sieze : </strong>{mobile_phone.storage_capacity} <strong> Year of Manufacture : </strong>{mobile_phone.manufacturing_year}</p>
+                  <p className="specifications"><strong> Storage Size : </strong>{mobile_phone.storage_capacity} <strong> Year of Manufacture : </strong>{mobile_phone.manufacturing_year}</p>
                   <p className="pricing"><strong> Color : </strong> {mobile_phone.color}  <strong> Selling Price : </strong>{mobile_phone.price}</p>
                   </Card>
                 </Col>
